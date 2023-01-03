@@ -1,3 +1,28 @@
+# Purpose
+
+This repo is my (Alok's) first attempt to learn Aurelia. 
+
+## Initial Reactions
+
+Since I am totally new to this framework, it should not shock anyone that my first reactions are to notice all the things that are different from my current favorite framework, React+Hooks. 
+
+At a high level, I have serious concerns about how easy it will be to change a large Aurelia project. There are basically two main issues, the reliance on mutability via bindings, and the separation between the view template and the object. I have grown attached to immutability, and to everything being typescript. Some more specific points:
+
+- Not sure that it is a good thing that there is no base class for the classes that underly views. Not sure which methods are available, and how to spell them.
+- Magic methods like "configureRouter", "canDeactivate" and "activate"  that get called by the framework seem like an anti-pattern.
+- The lack of static type checking on .bind, .trigger, .delegate etc in the templates make it feel like a recipe for typos and difficult refactoring. If you change the name of a method in a class, how can you be sure you caught all references to it in an html template?
+- The view templates introduce a whole new language that replicate what is already available in javascript. For example, do we need another for loop like "repeat.for"? Reminds me of knockout.js more than anything.
+- I basically don't like the separation between view and typescript object. Why not just make everything typescript like React?
+- Aurelia mentions that it has require for views instead of using import. Why not use import for views too? It's possible if everything is javascript. Then things like F12 for code navigation will work.
+- The lack of custom components such as JSX hurt scalability and encapsulation. You can do something similar with Aurelia modules, but they are much more heavy weight and complicated than a simple react component. Modules do too much; they are like react components plus hooks plus mutability.
+- The $parent special value that only exists within the view? More special case stuff...
+
+However, I will try to keep an open mind. The best way to learn new things is often to find someone who loves it.
+
+## Next Steps
+
+I'd like to write a React version of contact manager for compare and contrast purposes.
+
 # `aurelia-contact-manager`
 
 This project is bootstrapped by [aurelia-cli](https://github.com/aurelia/cli).

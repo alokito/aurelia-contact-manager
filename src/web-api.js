@@ -1,4 +1,4 @@
-let latency = 200;
+let latency = 2000;
 let id = 0;
 
 function getId(){
