@@ -23,6 +23,8 @@ However, I will try to keep an open mind. The best way to learn new things is of
 
 I'd like to write a React version of contact manager for compare and contrast purposes.
 
+Update: see https://github.com/alokito/react-contact-manager
+
 # `aurelia-contact-manager`
 
 This project is bootstrapped by [aurelia-cli](https://github.com/aurelia/cli).
